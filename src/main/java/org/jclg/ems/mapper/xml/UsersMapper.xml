@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jclg.ems.mapper.UsersMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="org.jclg.ems.bean.Users">
+        <id column="userid" property="userid" />
+        <result column="account" property="account" />
+        <result column="password" property="password" />
+        <result column="img" property="img" />
+        <result column="roleid" property="roleid" />
+        <result column="onsta" property="onsta" />
+        <result column="remark" property="remark" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        userid, account, password, img, roleid, onsta, remark
+    </sql>
+<!--    <select id="login" resultType="java.lang.Integer">-->
+<!--        select * from users where userid=#{userid} and password=#{password}-->
+<!--    </select>-->
+
+</mapper>

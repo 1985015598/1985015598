@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jclg.ems.mapper.CompanyMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="org.jclg.ems.bean.Company">
+        <id column="id" property="id" />
+        <result column="img" property="img" />
+        <result column="comname" property="comname" />
+        <result column="cominfo" property="cominfo" />
+        <result column="comindo" property="comindo" />
+        <result column="comaddress" property="comaddress" />
+        <result column="businfoid" property="businfoid" />
+        <result column="remark" property="remark" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, img, comname, cominfo, comindo, comaddress, businfoid, remark
+    </sql>
+
+</mapper>
